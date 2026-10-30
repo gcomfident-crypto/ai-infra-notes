@@ -224,18 +224,8 @@ echo "退出状态：$termination_status"
 
 `wait` 不只是等待。Shell 还会借此回收子进程的终止状态，避免它在任务表里一直留下未处理的完成记录。
 
-## 自我检验
-
-- [ ] 能解释程序、进程、PID、PPID 和 Shell 任务编号的区别
-- [ ] 能说清楚为什么后台进程的输出会出现在命令提示符后面
-- [ ] 能用 `ps` 和 `/proc/<PID>/status` 判断进程状态
-- [ ] 能解释文件描述符 `0`、`1`、`2` 分别做什么
-- [ ] 能解释 `> test.log 2>&1` 的执行顺序
-- [ ] 能解释 stdout 和 stderr 的写入顺序为什么可能改变
-- [ ] 能用 `SIGSTOP`、`SIGCONT` 和 `SIGTERM` 观察进程状态变化
-
 ## 参考资料
 
-- [Bash Job Control Basics](https://www.gnu.org/software/bash/manual/html_node/Job-Control-Basics.html)
-- [Bash Redirections](https://www.gnu.org/software/bash/manual/html_node/Redirections.html)
-- [Linux proc_pid_fd(5)](https://man7.org/linux/man-pages/man5/proc_pid_fd.5.html)
+- [1] [Bash Job Control Basics](https://www.gnu.org/software/bash/manual/html_node/Job-Control-Basics.html)
+- [2] [Bash Redirections](https://www.gnu.org/software/bash/manual/html_node/Redirections.html)
+- [3] [Linux proc_pid_fd(5)](https://man7.org/linux/man-pages/man5/proc_pid_fd.5.html)
